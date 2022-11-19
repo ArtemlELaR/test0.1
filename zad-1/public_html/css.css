@@ -1,3 +1,39 @@
+
+body {
+    position: relative;
+}
+.main_block {
+    height: 100vh;
+}
 .container{
-    
+    max-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    justify-content: space-around;
+    align-content: space-around;
+    position: absolute; 
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+.container div{
+   width: 70px; 
+   height: 70px; 
+   border-radius: 70px;
+}
+
+.container div{
+    background-color: #ff0000;
+ }
+ 
+
+.container div:first-child,.container div:last-child {
+    background-color: #063b56;
+}
+
+
+.container:hover{
+    transform: rotate(180deg)
 }
